@@ -49,7 +49,7 @@ echo "Preprocessing datasets..."
 DATADIR=data-bin/wmt17_en_zh
 rm -rf $DATADIR
 mkdir -p $DATADIR
-fairseq preprocess -sourcelang en -targetlang zh \
-    -trainpref $TEXT/train.${NUM_OPS}.bpe -validpref $TEXT/valid.${NUM_OPS}.bpe -testpref $TEXT/test.${NUM_OPS}.bpe \
-    -thresholdsrc 3 -thresholdtgt 3 -destdir $DATADIR
+fairseq-preprocess -s zh -t en \
+    --trainpref $TEXT/train.${NUM_OPS}.bpe --validpref $TEXT/valid.${NUM_OPS}.bpe --testpref $TEXT/test.${NUM_OPS}.bpe \
+    --thresholdsrc 3 --thresholdtgt 3 --destdir $DATADIR
 

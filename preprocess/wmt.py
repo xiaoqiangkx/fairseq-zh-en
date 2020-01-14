@@ -26,19 +26,24 @@ WMT17_TRAIN_ZHEN = {
 
 WMT17_DEV_ZHEN = {
     "url": "http://data.statmt.org/wmt17/translation-task/dev.tgz",
-    "source": "dev/newsdev2017-zhen-ref.en.sgm",
-    "target": "dev/newsdev2017-zhen-src.zh.sgm",
+    #"source": "dev/newsdev2017-zhen-ref.en.sgm",
+    #"target": "dev/newsdev2017-zhen-src.zh.sgm",
+    "source": "dev/newsdev2017-zhen-ref.en",
+    "target": "dev/newsdev2017-zhen-src.zh",
     "data_source": "valid.en",
     "data_target": "valid.zh",
 }
 
 WMT17_TEST_ZHEN = {
     "url": "http://data.statmt.org/wmt17/translation-task/test.tgz",
-    "source": "test/newstest2017-zhen-ref.en.sgm",
-    "target": "test/newstest2017-zhen-src.zh.sgm",
+    #"source": "test/newstest2017-zhen-ref.en.sgm",
+    #"target": "test/newstest2017-zhen-src.zh.sgm",
+    "source": "test/newstest2017-zhen-ref.en",
+    "target": "test/newstest2017-zhen-src.zh",
     "data_source": "test.en",
     "data_target": "test.zh",
 }
+
 
 DATA_DIR  = "data/wmt17_en_zh/"
 TMP_DIR = "tmp/wmt17_en_zh/"
